@@ -9,7 +9,7 @@ import com.netflix.loadbalancer.RandomRule;
 
 @Configuration
 public class RibbonChooseConfiguration {
-    @Bean
+    //@Bean
     public IRule ribbonRule(IClientConfig config) {
         return new RandomRule();
     }
